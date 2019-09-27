@@ -18,6 +18,10 @@ p {
   font-weight: 400;
 }
 
+hr {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 /* ------------------------------------------------------ */
 /* ANIMACIONES */
 /* ------------------------------------------------------ */
@@ -51,6 +55,7 @@ p {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 0;
   background-image: url("../img/bg-header-black.jpg");
   background-size: cover;
   background-position: center;
@@ -100,6 +105,38 @@ p {
 .encabezado .encabezado__texto .encabezado__btn:hover {
   text-shadow: none;
   border: 6px dotted rgba(255, 255, 255, 0.5);
+}
+
+/* ------------------------------------------------------ */
+/* MAIN */
+/* ------------------------------------------------------ */
+main {
+  color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 100;
+  position: relative;
+  margin-top: 100vh;
+}
+main .contenedor {
+  padding: 50px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+main .contenedor .contenedor__subtitulo-h2 {
+  margin-bottom: 50px;
+  padding: 0;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+}
+main .contenedor p .contenedor__letra-capital {
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+  font-size: 55px;
+  margin-right: 10px;
+  line-height: 15px;
+  font-family: serif;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -18,6 +18,10 @@ p {
     font-weight: 400;
 }
 
+hr {
+    background: rgba(#fff, .2);
+}
+
 
 /* ------------------------------------------------------ */
 
@@ -99,6 +103,7 @@ p {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 0;
     background-image: url('../img/bg-header-black.jpg');
     background-size: cover;
     background-position: center;
@@ -145,6 +150,46 @@ p {
             &:hover {
                 text-shadow: none;
                 border: 6px dotted rgba(#fff, .5);
+            }
+        }
+    }
+}
+
+
+/* ------------------------------------------------------ */
+
+
+/* MAIN */
+
+
+/* ------------------------------------------------------ */
+
+main {
+    color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 100;
+    position: relative;
+    margin-top: 100vh;
+    .contenedor {
+        padding: 50px 0;
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        .contenedor__subtitulo-h2 {
+            margin-bottom: 50px;
+            padding: 0;
+            font-size: 50px;
+            text-align: center;
+            text-shadow: 0 0 15px rgba(#fff, .5), 0 0 10px rgba(#fff, .5);
+        }
+        p {
+            .contenedor__letra-capital {
+                text-shadow: 0 0 15px rgba(#fff, .5), 0 0 10px rgba(#fff, .5);
+                font-size: 55px;
+                margin-right: 10px;
+                line-height: 15px;
+                font-family: serif;
             }
         }
     }
